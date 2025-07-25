@@ -132,7 +132,7 @@ main{
 .store-image img{
     width: 100%;
     width: fit-content;
-    /* height: fit-content; */
+    height: 600px;
 }
 #trust{
     font-size: .5rem;
@@ -469,7 +469,7 @@ main{
     .small-card1,
     .small-card2,
     .large-card {
-        width:;
+        width:100%;
         height: 201px;
 
     }
