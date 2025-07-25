@@ -1,0 +1,175 @@
+
+
+
+
+
+
+
+/* Share colouer */
+.color-1{
+    color:#252432 ;
+}
+.color-2{
+    color: #8987A1;
+}
+.color-3{
+    color: #000000;
+}
+.color-4{
+    color: #E95A08;
+}
+
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 150px 120px 150px;
+}
+.nav-icon ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.2rem;
+}
+.nav-icon ul li{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+}
+.fresh-section{
+    display: flex;
+    justify-content: space-between;
+    margin: 200px 120px 120px 180px;
+}
+.alwayes{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.fresh-description{
+    opacity: 50%;
+    font-size: 1.2rem;
+}
+.fresh-image img{
+    width: 570px;
+    height: 310px;
+
+}
+main{
+    max-width: 1440px;
+
+}
+/* Our Plant Section */
+.plant-title{
+    text-align: center;
+}
+.plant-tag{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.plant-description{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.plant-section{
+    margin: 20px 150px 40px 150px;
+}
+.plant-flower{
+    width: 270px;
+    /* height: 484px; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+
+
+    
+}
+.plant-image{
+    text-align: center;
+
+}
+
+.name{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.price{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.card-btn{
+    color:white;
+    background-color: #E95A08;
+    border: none;
+    width: 100%;
+    height: 30px;
+}
+/* Badge Section Design */
+.badge-section{
+    margin: 20px 150px 40px 150px;
+    
+}
+.store{
+    display: flex;
+    grid-area: 20px;
+}
+.store-title{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.store-list{
+    padding-left: 60px;
+}
+.store-list ul li{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #8987A1;
+}
+.store-image img{
+    width: 100%;
+}
+
+@media screen and (max-width:576px) {
+    .home, .shop, .about-us{
+        display: none;
+    }
+    .header{
+        margin: 50px 16px 0 16px;
+    }
+    .fresh-section{
+        flex-direction: column;
+        
+    }
+    .cart{
+        display: inline;
+
+    }
+    .fresh-image{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        align-items: start;
+        order: 1;
+        
+    }
+    .fresh-section{
+        margin: 0;
+    }
+    .fresh-flower{
+        position:relative;
+        order: 2;
+    }
+    .plant-section{
+        display: grid;
+        flex-direction: column;
+        margin: 2px;
+    }
+    .plant-flower{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 2px;
+    }
+}
